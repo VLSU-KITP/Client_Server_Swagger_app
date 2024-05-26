@@ -1,0 +1,14 @@
+@page
+@model MyRazorApp.Pages.DataModel
+@{
+    ViewData["Title"] = "Data Page";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<ul>
+    @foreach (var item in Model.Data)
+    {
+        <li>@item</li>
+    }
+</ul>
